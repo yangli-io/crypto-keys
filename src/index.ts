@@ -33,7 +33,7 @@ class CryptoKeys {
   }
 }
 
-export class Base16Key extends CryptoKeys {
+export class HexKey extends CryptoKeys {
   constructor(base16Keys: string) {
     super(hexToUint8(base16Keys));
   }
